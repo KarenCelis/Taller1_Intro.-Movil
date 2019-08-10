@@ -2,6 +2,7 @@ package com.example.fibonaci;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -27,7 +28,9 @@ public class MainActivity extends AppCompatActivity {
         num2 = 1;
         boton2 = findViewById(R.id.calcular1);
         texto = findViewById(R.id.textView2);
-        linear=findViewById(R.id.linear2);
+        linear = findViewById(R.id.linear2);
+        boton1 = findViewById(R.id.calcular5);
+        numero = findViewById(R.id.editText);
         boton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,12 +42,25 @@ public class MainActivity extends AppCompatActivity {
                 Log.i("tes", aux);
                 num1 = num2;
                 num2 = num3;
+
+                //4//
                 TextView textView = new TextView(view.getContext());
                 textView.setText(aux2);
                 textView.setId(num3);
                 linear.addView(textView);
+                //3//
+                //  texto.setText(aux);
+            }
+        });
 
-              //  texto.setText(aux);
+        boton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String num = numero.getText().toString();
+                Intent intent =new Intent(view.getContext(),Punto5.class);
+                intent.putExtra("Cuantos",num);
+                Log.i("eeeeeeee", num);
+                startActivity(intent);
             }
         });
     }
