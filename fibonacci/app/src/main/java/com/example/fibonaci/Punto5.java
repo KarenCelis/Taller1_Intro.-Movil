@@ -11,6 +11,7 @@ public class Punto5 extends AppCompatActivity {
     int num1;
     int num2;
     LinearLayout linear;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,18 +28,9 @@ public class Punto5 extends AppCompatActivity {
             Log.i("eeeeeeee", "act1..7.2");
 
             textView.setText("0");
-           // textView.setId(0);
+            // textView.setId(0);
             linear.addView(textView);
-        } else if(cantidad==2){
-            TextView textView = new TextView(this);
-            textView.setText("0");
-           // textView.setId(0);
-            linear.addView(textView);
-            TextView textView2 = new TextView(this);
-            textView2.setText("1");
-          //  textView2.setId(1);
-            linear.addView(textView2);
-        } else{
+        } else if (cantidad == 2) {
             TextView textView = new TextView(this);
             textView.setText("0");
             // textView.setId(0);
@@ -47,7 +39,16 @@ public class Punto5 extends AppCompatActivity {
             textView2.setText("1");
             //  textView2.setId(1);
             linear.addView(textView2);
-            for(int i=2; i<cantidad; i++){
+        } else {
+            TextView textView = new TextView(this);
+            textView.setText("0");
+            // textView.setId(0);
+            linear.addView(textView);
+            TextView textView2 = new TextView(this);
+            textView2.setText("1");
+            //  textView2.setId(1);
+            linear.addView(textView2);
+            for (int i = 2; i < cantidad; i++) {
 
                 int num3 = num1 + num2;
 
@@ -67,8 +68,8 @@ public class Punto5 extends AppCompatActivity {
         }
 
 
-
-        {}
+        {
+        }
 
     }
 }

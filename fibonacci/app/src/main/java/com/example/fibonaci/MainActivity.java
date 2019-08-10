@@ -57,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String num = numero.getText().toString();
-                Intent intent =new Intent(view.getContext(),Punto5.class);
-                intent.putExtra("Cuantos",num);
+                Intent intent = new Intent(view.getContext(), Punto5.class);
+                intent.putExtra("Cuantos", num);
                 Log.i("eeeeeeee", num);
                 startActivity(intent);
             }
