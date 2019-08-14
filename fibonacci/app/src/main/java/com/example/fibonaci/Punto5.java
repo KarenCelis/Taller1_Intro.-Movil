@@ -16,37 +16,37 @@ public class Punto5 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_punto5);
-        Log.i("eeeeeeee", "act2");
+        //Log.i("eeeeeeee", "act2");
         int cantidad = Integer.parseInt(getIntent().getStringExtra("Cuantos"));
         num1 = 0;
         num2 = 1;
         linear = findViewById(R.id.linear5);
-        Log.i("eeeeeeee", "act2.2");
+       // Log.i("eeeeeeee", "act2.2");
         if (cantidad == 1) {
-            Log.i("eeeeeeee", "act1.2");
+           // Log.i("eeeeeeee", "act1.2");
             TextView textView = new TextView(this);
-            Log.i("eeeeeeee", "act1..7.2");
+            //Log.i("eeeeeeee", "act1..7.2");
 
             textView.setText("0");
-            // textView.setId(0);
+
             linear.addView(textView);
         } else if (cantidad == 2) {
             TextView textView = new TextView(this);
             textView.setText("0");
-            // textView.setId(0);
+
             linear.addView(textView);
             TextView textView2 = new TextView(this);
             textView2.setText("1");
-            //  textView2.setId(1);
+
             linear.addView(textView2);
         } else {
             TextView textView = new TextView(this);
             textView.setText("0");
-            // textView.setId(0);
+
             linear.addView(textView);
             TextView textView2 = new TextView(this);
             textView2.setText("1");
-            //  textView2.setId(1);
+
             linear.addView(textView2);
             for (int i = 2; i < cantidad; i++) {
 
