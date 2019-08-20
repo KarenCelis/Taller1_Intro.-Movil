@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Ejercicio-Semana5</string>
+    <string-array name="nivelEducativo">
+        <item>Primaria</item>
+        <item>Bachiller</item>
+        <item>Técnico</item>
+        <item>Profesional</item>
+        <item>Maestría</item>
+        <item>Doctorado</item>
+        <item>Post-Doctorado</item>
+    </string-array>
+
+</resources>

@@ -10,20 +10,29 @@ import android.widget.TextView;
 public class Punto5 extends AppCompatActivity {
     int num1;
     int num2;
+
     LinearLayout linear;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_punto5);
+        super.onStart();
         //Log.i("eeeeeeee", "act2");
         int cantidad = Integer.parseInt(getIntent().getStringExtra("Cuantos"));
         num1 = 0;
         num2 = 1;
+
+
         linear = findViewById(R.id.linear5);
-       // Log.i("eeeeeeee", "act2.2");
+
+
+        // cua.setText("helooooooooooooooooooooooooooo");
+        // Log.i("eeeeeeee", "act2.2");
+
         if (cantidad == 1) {
-           // Log.i("eeeeeeee", "act1.2");
+            // Log.i("eeeeeeee", "act1.2");
             TextView textView = new TextView(this);
             //Log.i("eeeeeeee", "act1..7.2");
 

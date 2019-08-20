@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.fibonaci">
+    package="com.example.ejercicio_semana5">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,11 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DetallePais"></activity>
-        <activity android:name=".paises" />
-        <activity android:name=".bio" />
-        <activity android:name=".factorial" />
-        <activity android:name=".Punto5" />
+        <activity android:name=".frame"></activity>
+        <activity android:name=".web" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
